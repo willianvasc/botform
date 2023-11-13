@@ -11,7 +11,7 @@ df = pd.read_excel(arquivo)
 for index,row in df.iterrows():
 
     chrome = webdriver.Chrome(executable_path="chromedriver.exe")
-    chrome.get("https://ampl.me/fOJqewOjz")
+    chrome.get("#suaurl")
     inputNome = chrome.find_element(By.ID, "form-field-name")
     inputEmail = chrome.find_element(By.ID, "form-field-Email")
     inputTelefone = chrome.find_element(By.ID, "form-field-telefone")
